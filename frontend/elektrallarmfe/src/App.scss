@@ -1,0 +1,37 @@
+// Importa i file di variabili e tema
+@import './styles/variables';
+@import './styles/theme';
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; // per un effetto di transizione dolce tra i temi
+}
+
+.night-mode-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+// Modalità giorno
+body.day {
+  background-color: $color-background-day;
+  color: $color-text-day;
+}
+
+// Modalità notte
+body.night {
+  background-color: $color-background-night;
+  color: $color-text-night;
+}
+
+a {
+  color: $color-link-day;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-night;
+  }
+}
+
+// Stili aggiuntivi per navbar e altri componenti

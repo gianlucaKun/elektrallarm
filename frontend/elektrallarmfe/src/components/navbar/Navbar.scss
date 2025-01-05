@@ -1,0 +1,30 @@
+nav {
+    background-color: #333;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: border-bottom 0.2s ease;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 3px solid orange;
+  }
+  
+  nav ul li a.active {
+    border-bottom: 3px solid rgb(255, 187, 60); 
+    color: rgb(255, 187, 60); 
+  }

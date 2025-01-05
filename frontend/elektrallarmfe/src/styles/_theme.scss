@@ -1,0 +1,33 @@
+// Default tema giorno
+$theme: 'day'; // Puoi cambiare dinamicamente questo valore
+
+// Tema giorno
+$color-background-day: #ffffff;
+$color-text-day: #000000;
+$color-link-day: #0066cc;
+
+// Tema notte
+$color-background-night: #121212;
+$color-text-night: #ffffff;
+$color-link-night: rgb(255, 187, 60);
+
+// Impostazione del tema
+@if $theme == 'night' {
+  body {
+    background-color: $color-background-night;
+    color: $color-text-night;
+  }
+
+  a {
+    color: $color-link-night;
+  }
+} @else {
+  body {
+    background-color: $color-background-day;
+    color: $color-text-day;
+  }
+
+  a {
+    color: $color-link-day;
+  }
+}
