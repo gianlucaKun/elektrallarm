@@ -1,0 +1,44 @@
+.containerShortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around; 
+}
+
+.containerSCImg {
+    width: 220px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; 
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px; 
+        transition: transform 0.3s ease; 
+    }
+
+    p {
+        background-color: rgba(31, 31, 31, 0.65); 
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Ombra per migliorare la leggibilità del testo */
+        transition: background-color 0.3s ease; 
+    }
+
+    /* Effetto hover sull'immagine */
+    &:hover img {
+        transform: scale(1.05); 
+    }
+
+    &:hover p {
+        background-color: rgba(31, 31, 31, 0.9); 
+    }
+}
