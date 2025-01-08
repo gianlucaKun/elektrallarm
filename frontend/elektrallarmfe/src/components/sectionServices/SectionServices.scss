@@ -1,0 +1,69 @@
+.services-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Due colonne di uguale larghezza */
+  gap: 50px;
+  margin: 30px 0 60px;
+  width: 100%; /* Assicurati che la card occupi tutta la larghezza disponibile */
+
+  /* Aree per i contenuti */
+  &.image-left {
+    grid-template-areas: "text image"; /* Immagine a destra e testo a sinistra */
+  }
+
+  &.image-right {
+    grid-template-areas: "image text"; /* Immagine a sinistra e testo a destra */
+  }
+
+  .services-card-content {
+    grid-area: text; /* Definisce che il testo deve stare nell'area 'text' */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Testo allineato a sinistra */
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    button {
+      text-align: center;
+      background: transparent;
+      font-size: 1rem;
+      padding: 10px 30px;
+      cursor: pointer;
+    }
+  }
+
+  .services-card-image {
+    grid-area: image; /* Definisce che l'immagine deve stare nell'area 'image' */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiungi una leggera ombra per l'immagine */
+    }
+  }
+}
+
+
+@media (max-width: 768px) { /* Tablet (es. iPad) */
+    .services-card {
+      display: block;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    .services-card-content {
+        margin: 0 0 30px
+      }
+}

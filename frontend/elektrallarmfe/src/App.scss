@@ -13,6 +13,12 @@ body {
   right: 10px;
 }
 
+.text-center {
+  text-align: center;
+}
+.padding20 {
+  padding: 0 20px;
+}
 // Modalità giorno
 body.day {
   background-color: $color-background-day;
@@ -23,6 +29,14 @@ body.day {
 body.night {
   background-color: $color-background-night;
   color: $color-text-night;
+  button.colorForNight {
+    color: $color-text-night
+  } 
+  button.borderNight{
+    border: 1px solid $color-text-night;
+    background-color: transparent;
+    color: $color-text-night;
+  }
 }
 
 a {

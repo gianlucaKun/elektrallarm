@@ -19,6 +19,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 33%; /* 50% orizzontale (centrato), 10% verticale (più alto) */
     transition: transform 0.5s ease;
   }
   
@@ -47,3 +48,25 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
   
+
+@media (max-width: 768px) { /* Tablet (es. iPad) */
+  .carosello-container {
+    height: 300px; /* Riduci l'altezza */
+
+  }
+
+  .carosello-image-container img {
+    object-position: center center; /* Mostra la parte centrale per tablet */
+  }
+}
+
+@media (max-width: 480px) { /* Smartphone */
+  .carosello-container {
+    height: 200px; /* Altezza per smartphone */
+ 
+  }
+
+  .carosello-image-container img {
+    object-position: center center; /* Mostra la parte bassa per smartphone */
+  }
+}

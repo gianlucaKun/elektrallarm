@@ -1,6 +1,7 @@
 .site-title-container{
     padding-top: 3px;
     background: #fff;
+    width: 100%;
     img {
         width: 400px;
         margin-top: 20px;
@@ -11,3 +12,10 @@
         text-align: center;
     }
 }
+
+@media (max-width: 480px) { /* Smartphone */
+
+    .site-title-container img {
+      width: 100%;
+    }
+  }

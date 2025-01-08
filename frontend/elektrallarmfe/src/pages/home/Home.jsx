@@ -3,16 +3,13 @@ import './Home.scss'
 
 import ShortcutsMenu from "../../components/shortcutsMenu/ShortcutsMenu";
 import Carosello from "../../components/carusel/Carosello";
+import SectionServices from "../../components/sectionServices/SectionServices";
 
 const Home = () => {
   return (
     <div>
       <Carosello />
-      <div className="containerSubTitle">
-        <h1>ELEKTRALLARM</h1>
-        <h1>Impianti elettrici, Automazioni, Antifurti e Domotica</h1>
-      </div>
-      <ShortcutsMenu />
+      < SectionServices/>
       <div className="containerBio">
         <h2>Elektrallarm di Andreoni Adriano:</h2>
         <h2>specialisti in domotica, impianti elettrici e sicurezza</h2>
