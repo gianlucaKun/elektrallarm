@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Carosello />
       < SectionServices/>
-      <div className="containerBio">
+      <div className="containerBio padding20">
         <h2>Elektrallarm di Andreoni Adriano:</h2>
         <h2>specialisti in domotica, impianti elettrici e sicurezza</h2>
         <p>
@@ -29,7 +29,7 @@ const Home = () => {
         </p>
         
       </div>
-      <div className="containerContactMe">
+      <div className="containerContactMe padding20">
           <h2>Elektrallarm: innovazione e
           sicurezza per la tua casa o attività.</h2>
           <p>Chiamaci allo 346 8704412 dal lunedì al venerdì</p>
