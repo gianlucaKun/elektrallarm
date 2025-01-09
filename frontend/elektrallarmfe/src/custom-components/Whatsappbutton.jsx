@@ -1,5 +1,5 @@
 import React from "react";
-import whatsappLogo from "../assets/img/logo-whatsapp2.webp"
+import whatsappLogo from "../assets/img/logo-whatsapp2.png"
 
 const Whatsappbutton = () => {
   const phoneNumber = "393468704412";
