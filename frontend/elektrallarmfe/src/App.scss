@@ -71,6 +71,11 @@ body.day {
     border: 2px solid $color-text-day;
     background-color: transparent;
   }
+
+  .navbar-button {
+    color: $color-text-day;
+
+  }
 }
 
 // Modalità notte
@@ -85,13 +90,8 @@ body.night {
   }
 }
 
-a {
-  color: $color-link-day;
-  text-decoration: none;
-
-  &:hover {
-    color: $color-link-night;
-  }
+.navbar-button {
+  color: $color-text-night;
 }
 
 

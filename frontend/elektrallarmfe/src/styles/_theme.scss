@@ -19,7 +19,7 @@ $color-link-night: rgb(255, 187, 60);
   }
 
   a {
-    color: $color-link-night;
+    color: $color-text-night;
   }
 } @else {
   body {
@@ -28,6 +28,6 @@ $color-link-night: rgb(255, 187, 60);
   }
 
   a {
-    color: $color-link-day;
+    color: $color-text-day;
   }
 }

@@ -2,11 +2,11 @@
 
 
 nav {
-  background-color: #1c303d;
   padding: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 
 nav ul {
@@ -15,6 +15,7 @@ nav ul {
   padding: 0;
   display: flex;
   align-items: center;
+  gap: 5rem;
 }
 
 nav ul li {
@@ -23,12 +24,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
   transition: border-bottom 0.2s ease;
 }
 
 nav ul li a:hover {
+  color: $color-hover-button-navbar;
   border-bottom: 1px solid $color-hover-button-navbar;
 }
 
@@ -42,20 +43,45 @@ nav ul li a.active {
   border: none;
   display: flex;
   align-items: center;
-  color: #fff;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 15px;
   
   &:hover {
+    color: $color-hover-button-navbar;
     .phoneIcon {
       color: $color-hover-button-navbar;
     }
   }
 }
 .phoneIcon {
-  color: white;
   font-size: 1.5rem; /* Imposta una dimensione dell'icona */
-
+  
   margin-right: 5px;
   transform: rotateY(180deg);
 }
+
+@media (max-width: 916px) { 
+
+  nav {
+    width: 90%;
+    ul {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) { /* Tablet */
+
+  nav {
+    width: 90%;
+    ul {
+      gap: 0;
+    }
+  }
+
+  .buttonPhone {
+    margin-right: 0;
+  }
+}
+

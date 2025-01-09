@@ -8,8 +8,6 @@ import SectionServices from "../../components/sectionServices/SectionServices";
 const Home = () => {
   return (
     <div>
-      <Carosello />
-      <SectionServices />
       <div className="containerBio padding20">
         <h2>Elektrallarm di Andreoni Adriano:</h2>
         <h2>specialisti in domotica, impianti elettrici e sicurezza</h2>
@@ -25,11 +23,21 @@ const Home = () => {
           senza impegno per informazioni o preventivi personalizzati: saremo
           felici di trovare insieme a te la soluzione ideale.
         </p>
+       
+
       </div>
+      <Carosello />
+      
+     
+      <SectionServices />
       <div className="containerContactMe padding20">
         <h2>
           Elektrallarm: innovazione e sicurezza per la tua casa o attività.
         </h2>
+        <h2>{" "}test</h2>
+      </div>
+      <div>
+        <h1>form contattami</h1>
       </div>
     </div>
   );
