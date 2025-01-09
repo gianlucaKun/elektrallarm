@@ -45,7 +45,13 @@
     }
   }
 }
-
+.piedipagina {
+  margin: 0;
+  padding: 5px 0 10px;
+  background: $bg-services-color;
+  text-align: center;
+  font-size: 0.8rem;
+}
 
 @media (max-width: 768px) {
     .container-footbar {
@@ -72,5 +78,10 @@
   .elektrallarm-footbar {
     color: $font-color-h;
     font-size: $font-size-elektrallarm-footbar-smartphone;
+  }
+
+  .piedipagina {
+    padding: 5px 15px 10px;
+
   }
 }
