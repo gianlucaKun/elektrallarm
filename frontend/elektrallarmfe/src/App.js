@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Header from "./components/header/Header";
 import { useEffect, useState } from "react";
 import NightModeButton from "./custom-components/NightModeButton";
+import Whatsappbutton from "./custom-components/Whatsappbutton";
 
 const App = () => {
   // Verifica il valore del tema nel localStorage
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Whatsappbutton/>
       </div>
     </Router>
   );

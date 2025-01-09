@@ -1,3 +1,11 @@
+.containerServices {
+  margin-top: -25px;
+background-color: #336699;
+padding-top: 2rem;
+padding-bottom: 1rem;
+color: #fff;
+}
+
 .services-card {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Due colonne di uguale larghezza */
@@ -36,6 +44,8 @@
       font-size: 1rem;
       padding: 10px 30px;
       cursor: pointer;
+      color: #fff;
+      border: 2px solid #ddd;
     }
   }
 

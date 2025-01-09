@@ -6,7 +6,7 @@ const ServicesCard = ({ title, description, image, isImageRight }) => {
         <div  className="services-card-content">
             <h2>{title}</h2>
             <p>{description}</p>
-            <button className='colorForNight borderNight borderDay'>Maggiori info</button>
+            <button className=''>Maggiori info</button>
         </div>
         <div className="services-card-image">
             <img src={image} alt={title} />

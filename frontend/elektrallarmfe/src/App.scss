@@ -17,12 +17,51 @@ body {
   padding: 2px 10px 1px;
 }
 
+.whatsapp-logo {
+  width: 80px;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              filter 0.3s ease;
+  filter: drop-shadow(7px 9px 8px rgba(0, 0, 0, 0.8));
+
+  &:hover {
+    transform: scale(1.1);
+    animation: perspective-swing 3s ease-in-out infinite; 
+    filter: drop-shadow(9px 11px 10px rgba(0, 0, 0, 0.8));
+  }
+}
+
+// Definizione animazione di oscillazione con prospettiva
+@keyframes perspective-swing {
+  0%, 100% {
+    transform: rotateZ(0deg) rotateX(0deg); // Posizione iniziale e finale
+  }
+  25% {
+    transform: rotateZ(-10deg) rotateX(15deg); // Oscillazione verso sinistra e avanti
+  }
+  50% {
+    transform: rotateZ(10deg) rotateX(-15deg); // Oscillazione verso destra e indietro
+  }
+  75% {
+    transform: rotateZ(-5deg) rotateX(8deg); // Oscillazione meno pronunciata verso sinistra
+  }
+}
+
+
+
 .text-center {
   text-align: center;
 }
 .padding20 {
   padding: 0 20px;
 }
+
 // Modalità giorno
 body.day {
   background-color: $color-background-day;
@@ -55,4 +94,12 @@ a {
   }
 }
 
-// Stili aggiuntivi per navbar e altri componenti
+
+// display smartphone
+@media (max-width: 480px) {
+  .whatsapp-logo {
+    width: 50px;
+    bottom: 25px;
+  right: 15px;
+  }
+}
