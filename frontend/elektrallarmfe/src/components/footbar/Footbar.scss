@@ -1,5 +1,5 @@
 @import "../../styles/variables";
-
+@import "../../styles/theme";
 .container-footbar {
   display: flex;
   justify-content: space-around;
@@ -51,6 +51,7 @@
   background: $bg-services-color;
   text-align: center;
   font-size: 0.8rem;
+  color: $color-text-night;
 }
 
 @media (max-width: 768px) {
