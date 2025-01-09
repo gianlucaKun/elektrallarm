@@ -5,18 +5,18 @@ const Whatsappbutton = () => {
   const phoneNumber = "393468704412";
   return (
     <a
-      href={`https://wa.me/${phoneNumber}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="whatsapp-button"
-    >
-      <img
-        src={whatsappLogo}
-        alt="WhatsApp"
-        className="whatsapp-logo"
-      />
-      Contattaci su WhatsApp
-    </a>
+  href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent("Ciao! Vorrei avere maggiori informazioni ")}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="whatsapp-button"
+>
+  <img
+    src={whatsappLogo}
+    alt="WhatsApp"
+    className="whatsapp-logo"
+  />
+</a>
+
   );
 };
 

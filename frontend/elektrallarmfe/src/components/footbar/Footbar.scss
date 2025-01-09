@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.container-footbar {
+  display: flex;
+  justify-content: space-around;
+  background: $bg-services-color;
+  padding: 35px 5px;
+}
+.elektrallarm-footbar {
+  color: $font-color-h;
+  font-size: $font-size-elektrallarm-footbar;
+}
+
+.subtitle-footbar {
+  color: $font-color-p;
+  font-size: $font-size-subtitle;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px;
+}
+.contatti-container {
+  color: $font-color-p;
+  font-size: $font-size-p;
+  transition: color 0.3s ease;
+  letter-spacing: 1.5px;
+
+  a,
+  p {
+    color: $font-color-p;
+    font-size: $font-size-p;
+    transition: color 0.3s ease;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .container-sede-footbar {
+    p.sede-footbar {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+    .container-footbar {
+        padding: 35px 45px;
+      }
+  
+    .elektrallarm-footbar {
+      color: $font-color-h;
+      font-size: $font-size-elektrallarm-footbar-smartphone;
+    }
+  }
+
+
+
+
+@media (max-width: 650px) {
+  .container-footbar {
+    display: block;
+    justify-content: space-around;
+    background: $bg-services-color;
+    text-align: center;
+  }
+
+  .elektrallarm-footbar {
+    color: $font-color-h;
+    font-size: $font-size-elektrallarm-footbar-smartphone;
+  }
+}

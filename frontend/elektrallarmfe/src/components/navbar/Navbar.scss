@@ -1,3 +1,6 @@
+@import '../../styles/variables';
+
+
 nav {
   background-color: #1c303d;
   padding: 0.8rem;
@@ -10,7 +13,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Disporre i link orizzontalmente */
+  display: flex;
   align-items: center;
 }
 
@@ -26,12 +29,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 3px solid orange;
+  border-bottom: 1px solid $color-hover-button-navbar;
 }
 
 nav ul li a.active {
-  border-bottom: 3px solid rgb(255, 187, 60);
-  color: rgb(255, 187, 60);
+  font-size: 1.3rem;
+  color: $color-hover-button-navbar;
 }
 
 .buttonPhone {
@@ -40,8 +43,14 @@ nav ul li a.active {
   display: flex;
   align-items: center;
   color: #fff;
-  cursor: pointer; 
+  cursor: pointer;
   text-decoration: none;
+  
+  &:hover {
+    .phoneIcon {
+      color: $color-hover-button-navbar;
+    }
+  }
 }
 .phoneIcon {
   color: white;

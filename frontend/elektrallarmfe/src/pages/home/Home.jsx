@@ -32,8 +32,6 @@ const Home = () => {
       <div className="containerContactMe padding20">
           <h2>Elektrallarm: innovazione e
           sicurezza per la tua casa o attività.</h2>
-          <p>Chiamaci allo 346 8704412 dal lunedì al venerdì</p>
-          <button>Contattaci via E-Mail</button>
         </div>
     </div>
   );
