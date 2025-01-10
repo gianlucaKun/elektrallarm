@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <nav>
     <ul>
-        <li><NavLink to="/" activeClassName="active" className="navbar-button">Home</NavLink></li>
-        <li><NavLink to="/services" activeClassName="active" className="navbar-button">Servizi</NavLink></li>
+        {/* <li><NavLink to="/" activeClassName="active" className="navbar-button">Home</NavLink></li> */}
+        {/* <li><NavLink to="/services" activeClassName="active" className="navbar-button">Servizi</NavLink></li> */}
         {/* <li><NavLink to="/gallery" activeClassName="active">Galleria</NavLink></li> */}
         {/* <li><NavLink to="/about" activeClassName="active">About</NavLink></li> */}
         {/* <li><NavLink to="/contact" activeClassName="active">Contatti</NavLink></li> */}

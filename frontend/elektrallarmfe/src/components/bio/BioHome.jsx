@@ -45,7 +45,9 @@ const BioHome = () => {
           >
             Scopri di più
           </button>
-          <button className="btn-contact-me-bio">Contattaci</button>
+          <button className="btn-contact-me-bio"><a href="mailto:elektrallarm@gmail.com?subject=Richiesta%20informazioni&body=Ciao,%20ho%20bisogno%20di%20maggiori%20informazioni.">
+            Contattaci
+          </a></button>
         </div>
       </div>
 

@@ -57,6 +57,10 @@
     background: white;
     color: $bg-services-color;
 
+    a {
+      text-decoration: none;
+    }
+
     &:hover {
       background: #ddd;
       color: $bg-services-color;

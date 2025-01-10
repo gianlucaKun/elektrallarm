@@ -89,7 +89,7 @@ nav ul li a.active {
 @media (max-width: 825px) { /* Tablet */
 
   nav {
-    width: 95%;
+    width: auto;
     
     ul {
       gap: 0;
@@ -99,7 +99,10 @@ nav ul li a.active {
 
   .buttonPhone {
     margin-right: 0;
+    padding: 5px 6px;
   }
+
+  
 }
 
 

@@ -4,6 +4,7 @@ import "./Home.scss";
 import Carosello from "../../components/carusel/Carosello";
 import SectionServices from "../../components/sectionServices/SectionServices";
 import BioHome from "../../components/bio/BioHome";
+import Map from "../../components/map/Map";
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <BioHome/>
       <Carosello />
       
-     <div><div className="containerContactMe padding20">
+     {/* <div><div className="containerContactMe padding20">
         <h2>
           Elektrallarm: innovazione e sicurezza per la tua casa o attività.
         </h2>
@@ -27,9 +28,9 @@ const Home = () => {
       </div>
       <div>
         <h1>form contattami</h1>
-      </div></div>
+      </div></div> */}
       <SectionServices />
-      <div className="containerContactMe padding20">
+      {/* <div className="containerContactMe padding20">
         <h2>
           Elektrallarm: innovazione e sicurezza per la tua casa o attività.
         </h2>
@@ -38,6 +39,7 @@ const Home = () => {
       <div>
         <h1>form contattami</h1>
       </div>
+      <Map/> */}
     </div>
   );
 };
