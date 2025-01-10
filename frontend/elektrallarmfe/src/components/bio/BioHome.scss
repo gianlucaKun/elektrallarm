@@ -47,10 +47,20 @@
   .btn-scopri-bio {
     background: transparent;
     color: #ddd;
+
+    &:hover {
+      background: #dddddd0a;
+      color: #ffffff;
+    }
   }
   .btn-contact-me-bio {
     background: white;
     color: $bg-services-color;
+
+    &:hover {
+      background: #ddd;
+      color: $bg-services-color;
+    }
   }
 }
 @media (max-width: 1000px) {

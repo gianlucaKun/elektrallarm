@@ -12,14 +12,14 @@
         text-align: center;
     }
 }
-@media (max-width: 768px) { /* Tablet */
+@media (max-width: 825px) { /* Tablet */
 
     .site-title-container img {
       padding-left: 0;
       margin: 20px auto 0;
     }
   }
-@media (max-width: 480px) { /* Smartphone */
+@media (max-width: 550px) { /* Smartphone */
 
     .site-title-container img {
       width: 100%;
