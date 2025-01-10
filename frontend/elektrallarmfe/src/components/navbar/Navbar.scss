@@ -99,7 +99,11 @@ nav ul li a.active {
 
   .buttonPhone {
     margin-right: 0;
-    padding: 5px 6px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    span {
+      display: none;
+    }
   }
 
   

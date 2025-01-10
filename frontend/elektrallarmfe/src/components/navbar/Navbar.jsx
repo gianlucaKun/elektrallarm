@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* <li><NavLink to="/contact" activeClassName="active">Contatti</NavLink></li> */}
     </ul>
     <a href="tel:+393468704412" className="buttonPhone navbar-button">
-        <FaPhone className='phoneIcon navbar-button'/> +39 346 8704 412
+        <FaPhone className='phoneIcon navbar-button'/><span>+39 346 8704 412</span> 
       </a>
 </nav>
   )
