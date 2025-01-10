@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.scss";
 
-import ShortcutsMenu from "../../components/shortcutsMenu/ShortcutsMenu";
 import Carosello from "../../components/carusel/Carosello";
 import SectionServices from "../../components/sectionServices/SectionServices";
 import BioHome from "../../components/bio/BioHome";
